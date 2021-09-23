@@ -1,8 +1,7 @@
-import HttpElement from "./lib/http-element";
-
-class App extends HttpElement {
+class App {
   render() {
-    return `<div>hello world</div>`;
+    const rootEl = document.querySelector("#root");
+    rootEl.innerHTML = `<div>hello world</div>`;
   }
 }
 
